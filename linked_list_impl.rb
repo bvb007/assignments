@@ -24,3 +24,4 @@ l.add("a")
 l.list
 l.add(Car.new)
 l.list
+l.add(33.33)
