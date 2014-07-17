@@ -1,3 +1,4 @@
+# Battle of wolf and sheep
 class Points
 	attr_accessor :x, :y
 	def initialize x,y

@@ -56,11 +56,13 @@ y = gets.chomp.to_i;
 p1 = Points.new(x,y)
 wolf = Wolf.new(p1)
 abort("Error!!! Enter a values between 0 and 4") unless( (x.between?(0,4)) && (y.between?(0,4)) )
+
 puts "Enter the starting point for Sheep: ";
 x = gets.chomp.to_i; 
 y = gets.chomp.to_i;
 p2 = Points.new(x,y)
 sheep = Sheep.new(p2)
+abort("Error!!! Enter a values between 0 and 4") unless( (x.between?(0,4)) && (y.between?(0,4)) )
 
 until(sheep.current_point == wolf.current_point)
 	wolf.move
